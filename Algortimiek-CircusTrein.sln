@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircusTrein", "Algortimiek-CircusTrein\CircusTrein.csproj", "{108ECD06-725C-4AEC-A4A8-CA31BE17C0D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmiek-CircusTrein.UnitTest", "Algoritmiek-CircusTrein.UnitTest\Algoritmiek-CircusTrein.UnitTest.csproj", "{8834A345-9475-4B3F-908D-D1FDEF4C61B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoritmiekCircusTrein.UnitTest", "Algoritmiek-CircusTrein.UnitTest\AlgoritmiekCircusTrein.UnitTest.csproj", "{8834A345-9475-4B3F-908D-D1FDEF4C61B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

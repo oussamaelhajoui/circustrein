@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgortimiekCircusTrein
 {
-    class TrainWagon
+    public class TrainWagon
     {
         public int Capacity { get; private set; }
         public int ID { get; private set; }

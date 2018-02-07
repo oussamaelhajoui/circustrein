@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Algortimiek-CircusTrein;
+using AlgortimiekCircusTrein;
 
-namespace Algoritmiek_CircusTrein.UnitTest
+namespace AlgoritmiekCircusTrein.UnitTest
 {
     [TestClass]
     public class TrainWagonTest
@@ -12,7 +12,7 @@ namespace Algoritmiek_CircusTrein.UnitTest
         {
             // Arange
             
-            var NewTrainWagon = new TrainWagon();
+            //var NewTrainWagon = new TrainWagon();
             // Act
 
             // Assert
