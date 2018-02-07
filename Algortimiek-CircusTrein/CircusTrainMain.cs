@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Algortimiek_CircusTrein
+namespace AlgortimiekCircusTrein
 {
     public partial class CircusTrein : Form
     {

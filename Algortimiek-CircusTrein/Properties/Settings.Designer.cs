@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Algortimiek_CircusTrein.Properties
+namespace AlgortimiekCircusTrein.Properties
 {
 
 

@@ -1,4 +1,4 @@
-﻿namespace Algortimiek_CircusTrein
+﻿namespace AlgortimiekCircusTrein
 {
     partial class CircusTrein
     {
