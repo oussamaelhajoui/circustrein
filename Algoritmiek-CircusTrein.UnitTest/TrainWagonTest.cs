@@ -11,11 +11,14 @@ namespace AlgoritmiekCircusTrein.UnitTest
         public void AddAnimal_AnimalIsCarnivorAndBigToEmptyWagon_ReturnsTrue()
         {
             // Arange
-            
-            //var NewTrainWagon = new TrainWagon();
+            int tempID = 1;
+            var NewTrainWagon = new TrainWagon(tempID);
+
             // Act
+            var result = NewTrainWagon.AddAnimal(new Animal("TestName", EatingOptions.Vlees, AnimalSizes.Groot));
 
             // Assert
+            Assert.IsTrue(result);
         }
     }
 }
