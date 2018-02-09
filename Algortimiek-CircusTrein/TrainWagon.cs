@@ -21,7 +21,7 @@ namespace AlgortimiekCircusTrein
 
         public bool AddAnimal(Animal newAnimal)
         {
-            if ((Capacity + newAnimal.Points) > 10) { return false; } // als het wagon overvol raakt door het nieuwe dier dan mag het dier er niet in.
+            if ((Capacity + newAnimal.Points) > 10) return false; // als het wagon overvol raakt door het nieuwe dier dan mag het dier er niet in.
             else
             {
                 if (newAnimal.EatOption == EatingOptions.Vlees) // if animal eats meat.
