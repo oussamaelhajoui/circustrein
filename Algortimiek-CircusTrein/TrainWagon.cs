@@ -21,33 +21,11 @@ namespace AlgortimiekCircusTrein
 
         public bool AddAnimal(Animal newAnimal)
         {
-            if ((Capacity + newAnimal.Points) > 10) return false; // als het wagon overvol raakt door het nieuwe dier dan mag het dier er niet in.
-            else
-            {
-                if (newAnimal.EatOption == EatingOptions.Vlees) // if animal eats meat.
-                {
-                    foreach (Animal animInTrain in AnimalsInJoint)
-                    {
-
-                        if (animInTrain.Points <= newAnimal.Points)
-                            return false;
-
-                        if (animInTrain.Points >= newAnimal.Points && animInTrain.EatOption == EatingOptions.Vlees)
-                            return false;
-                    }
-                }
-                else // if animal eats plants.
-                {
-                    foreach (Animal animInTrain in AnimalsInJoint)
-                    {
-                        if (animInTrain.EatOption == EatingOptions.Vlees && animInTrain.Points >= newAnimal.Points)
-                            return false;
-                    }
-                }
-            }
-
-            return AddAnim(newAnimal);
+            var AnimalsInDanger = AnimalsInJoint.Where(animal => newAnimal.Points >= animal.Points && newAnimal.EatOption == EatingOptions.Vlees);
+            if(!AnimalsInDanger.Any() && (Capacity + newAnimal.Points) < 10) { return AddAnim(newAnimal); } else { return false; }
         }
+
+       
 
         private bool AddAnim(Animal newAnimal)
         {
