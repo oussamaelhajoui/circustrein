@@ -22,7 +22,7 @@ namespace AlgortimiekCircusTrein
         public bool AddAnimal(Animal newAnimal)
         {
             var AnimalsInDanger = AnimalsInJoint.Where(animal => newAnimal.Points >= animal.Points && newAnimal.EatOption == EatingOptions.Vlees);
-            if(!AnimalsInDanger.Any() && (Capacity + newAnimal.Points) < 10) { return AddAnim(newAnimal); } else { return false; }
+            if(!AnimalsInDanger.Any() && (Capacity + newAnimal.Points) <= 10) { return AddAnim(newAnimal); } else { return false; }
         }
 
        
